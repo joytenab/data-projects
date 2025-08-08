@@ -1,0 +1,23 @@
+# BMI is measurement of body fat based on height and weight. It can be calculated using pounds and inches:
+# BMI = (weight in pounds x 703) / (height in inches x height in inches)
+weight = float(input("Enter your weight in pounds: "))
+print("You have entered",weight)
+
+height= float(input("Enter your height in inches"))
+print("You have entered",height)
+BMI = (weight*703) / (height* height)
+
+if BMI < 18.5:
+    print("Your BMI is:",BMI,"You are classified as underweight and have minimal health risks")
+elif BMI >= 18.5 and BMI <=24.9:
+    print("Your BMI is:",BMI,"Your are classified as normal weight and have minimal health risks")
+elif BMI >= 25 and BMI <= 29.9:
+    print("Your BMI is:",BMI,"Your are classified as overweight and have increased health risks")
+elif BMI >= 30 and BMI <= 34.9:
+    print("Your BMI is:",BMI,"Your are classified as obese and have high health risks")
+elif BMI >= 35 and BMI <= 39.9:
+    print("Your BMI is:",BMI,"Your are classified as severly obese and have very high health risks")
+elif BMI >= 40:
+    print("Your BMI is:",BMI,"Your are classified as morbidly obese and have extremely high health risks")
+else:
+    print("input not valid")
